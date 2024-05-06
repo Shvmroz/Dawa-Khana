@@ -2,8 +2,7 @@ import React from 'react'
 import banner1 from '../Images/banner1.png'
 import banner2 from '../Images/banner2.png'
 import banner3 from '../Images/banner3.png'
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+
 
 export const Banner = () => {
     return (
