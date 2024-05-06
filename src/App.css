@@ -1,38 +1,404 @@
-.App {
+/*=========== General Css ===========*/
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {}
+
+h1 {}
+
+h2 {}
+
+h3 {}
+
+h4 {}
+
+
+ul,
+ol,li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+.blue-btn {
+  background-color: #18A9DD !important;
+  border-radius: 8px !important;
+  text-transform: none !important;
+  padding: 10px 20px !important;
+}
+
+.green-btn {
+  background-color: #09af65 !important;
+  border-radius: 8px !important;
+  text-transform: none !important;
+  padding: 10px 20px !important;
+}
+
+.blue-clr {
+  color: #18A9DD;
+}
+
+.green-clr {
+  color: #09af65;
+}
+
+
+/*=========== Nav Bar ===========*/
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.logo img {
+  width: 40px;
+  margin: 0px 12px;
+}
+
+.nav-item {
+  margin: 10px;
+}
+
+.navbar-nav .nav-item a:hover {
+  color: #09af65;
+  font-weight: 500;
+}
+.navbar-nav li {
+  list-style-type: none;
+}
+
+.navbar-nav li a {
+  text-decoration: none;
+  position: relative;
+}
+
+.navbar-nav li a::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color:#18A9DD; /* Change the color as needed */
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.navbar-nav li a:hover::after {
+  width: 100%;
+  left: 0;
+}
+.login-text h6:hover{
+  color: #09af65;
+  cursor: pointer;
+}
+
+/*=========== Banner ===========*/
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.banner-section {
+  padding: 25px;
+  background-image: url(./Images/banner-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.left-text {
+
+  margin: 30px;
+
+}
+
+/* carsol indicator button */
+.carousel-indicators [data-bs-target] {
+  background-color: #a3bcb0;
+}
+
+
+.carousel-indicators .active {
+  background-color: #09af65;
+}
+
+/*============= section two =============*/
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.section-two {
+  padding: 20px 0px;
+
+}
+
+.section-two li {
+  margin-right: 10px;
+}
+
+.boxes-icon {
+  font-size: 40px;
+  margin: 20px;
+  color: #09af65;
+
+}
+
+/*=========== Products ===========*/
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.Products {
+  padding: 40px 0px;
+
+}
+
+.product-heading h1 {
   text-align: center;
+  margin-top: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Products .card {
+  padding: 10px;
+  border-radius: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.Products .card .card-body {
+  background-color: #f2fff5;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.description {
+  height: 60px; /* Set a fixed height for the description */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cart {
+  padding: 15px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #ebf6f8;
+}
+
+/* Hover ====================*/
+.Products .card {
+  padding: 10px;
+  margin: 10px;
+  height: 100%;
+  border-radius: 10px;
+  transition: box-shadow 0.3s, background-color 0.3s;
+  /* Add transition for smooth effect */
+}
+
+.Products .card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  /* Add shadow on hover */
+}
+
+.Products .card:hover .card-body {
+  background-color: #d8f3dc;
+  /* Change body color on hover */
+}
+
+.Products .card:hover img {
+  transform: scale(1.05);
+  /* Zoom image on hover */
+}
+
+.cart {
+  padding: 15px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #ebf6f8;
+  transition: background-color 0.3s;
+  /* Add transition for smooth effect */
+}
+
+.cart:hover {
+  background-color: #b4e7fa;
+  cursor: pointer;
+}
+
+
+/*=========== About section ===========*/
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.about-section {
+  margin: 60px 20px;
+  background-color: #f4f6fa;
+  box-shadow: 0 0 23px -17px #000000;
+  border: 12px solid #fff;
+}
+
+.about-section .container {
+  padding: 10px;
+}
+
+.about-text {
+  padding: 40px;
+  height: 100%;
+ 
+}
+
+.about-text .about-box h5 {
+  font-weight: bold;
+}
+
+.about-text .about-box h5,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.about-text .read-more {
+  color: #09af65;
+  font-style: italic;
+}
+
+.about-text .read-more:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+.box-one {
+  background-color: #E3E9F6;
+  color: #8392B3;
+  padding: 14px;
+  margin: 25px 0 0;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.box-two {
+  background-color: #E4F1F0;
+  color: #86B3B0;
+  padding: 14px;
+  margin: 25px 0 0;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.box-three {
+  background-color: #F5F1EB;
+  color: #C0B099;
+  padding: 14px;
+  margin: 25px 0 0;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.box-four {
+  background-color: #E2E4E8;
+  color: #909090;
+  padding: 14px;
+  margin: 25px 0 0;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/*=========== CUstomer Feedback ===========*/
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.Feedback-Section {
+  padding: 80px 20px;
+  background-color: #effdfd;
+  background-image: url(./Images/light-bg.png);
+}
+
+/*=============   =============*/
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+/*============= Footer =============*/
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.footer-section {
+  background-image: url(./Images/footer-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 64px 100px;
+}
+
+.footer-section .logo {
+  margin-bottom: 20px;
+}
+
+.footer-section p {
+  color: #ffffff !important;
+
+}
+
+
+@media only screen and (max-width: 768px) {
+  .footer-section {
+    padding: 64px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* RIght colum */
+
+.footer-section .footer-menu h4 {
+  font-weight: 600;
+  padding-bottom: 24px;
+}
+
+.footer-section .footer-menu {
+  justify-content: space-between;
+  color: #ffffff !important;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.stay-uptodate {
+  margin-bottom: 30px;
+}
+
+/* menu */
+
+.footer-section .footer-menu ul li {
+  padding-bottom: 12px;
+}
+
+.footer-section .footer-menu li:hover {
+  color: #09af65;
+  cursor: pointer;
+}
+
+.stay-uptodate {
+  margin-top: 30px;
+}
+
+/* icon */
+.footer-section .foter-icon ul {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
 }
 
-.App-link {
-  color: #61dafb;
+.footer-section .foter-icon li {
+  margin: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer-section .foter-icon li svg:hover {
+  background-color: #09af65;
+  cursor: pointer;
+  border-radius: 50%;
 }
+
