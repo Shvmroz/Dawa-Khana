@@ -1,5 +1,5 @@
 /*=========== General Css ===========*/
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
 * {
   box-sizing: border-box;
 }
@@ -18,7 +18,10 @@ h4,
 h5,
 h6 {}
 
-h1 {}
+h1 {
+  font-size: 60px;
+  font-weight: bold;
+}
 
 h2 {}
 
@@ -28,7 +31,8 @@ h4 {}
 
 
 ul,
-ol,li {
+ol,
+li {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -63,14 +67,24 @@ a {
 .blue-clr {
   color: #18A9DD;
 }
-
 .green-clr {
   color: #09af65;
 }
+/* other color */
+.o-clr {
+  color: orange;
+}
 
+.g-clr {
+  color: #46b356;
+}
 
-/*=========== Nav Bar ===========*/
+.r-clr {
+  color: #FF5F5E;
+}
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/*=========== Nav Bar =========== start*/
 
 .logo img {
   width: 40px;
@@ -85,6 +99,7 @@ a {
   color: #09af65;
   font-weight: 500;
 }
+
 .navbar-nav li {
   list-style-type: none;
 }
@@ -101,7 +116,8 @@ a {
   bottom: 0;
   height: 2px;
   width: 0;
-  background-color:#18A9DD; /* Change the color as needed */
+  background-color: #18A9DD;
+  /* Change the color as needed */
   transition: width 0.3s ease, left 0.3s ease;
 }
 
@@ -109,13 +125,15 @@ a {
   width: 100%;
   left: 0;
 }
-.login-text h6:hover{
+
+.login-text h6:hover {
   color: #09af65;
   cursor: pointer;
 }
 
-/*=========== Banner ===========*/
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/*=========== Banner ===========*/
 
 .banner-section {
   padding: 25px;
@@ -141,29 +159,12 @@ a {
   background-color: #09af65;
 }
 
-/*============= section two =============*/
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-.section-two {
-  padding: 20px 0px;
-
-}
-
-.section-two li {
-  margin-right: 10px;
-}
-
-.boxes-icon {
-  font-size: 40px;
-  margin: 20px;
-  color: #09af65;
-
-}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /*=========== Products ===========*/
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
 .Products {
   padding: 40px 0px;
-
 }
 
 .product-heading h1 {
@@ -182,8 +183,10 @@ a {
   margin-bottom: 10px;
   margin-top: 10px;
 }
+
 .description {
-  height: 60px; /* Set a fixed height for the description */
+  height: 60px;
+  /* Set a fixed height for the description */
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -196,7 +199,7 @@ a {
   background-color: #ebf6f8;
 }
 
-/* Hover ====================*/
+/* Hover ===== Effect*/
 .Products .card {
   padding: 10px;
   margin: 10px;
@@ -235,24 +238,46 @@ a {
   cursor: pointer;
 }
 
-
-/*=========== About section ===========*/
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-.about-section {
+
+/*============= We-offer =============*/
+.We-offer {
+  padding: 20px 0px;
+  background-image: url(./Images/light-bg.png);
+  background-size: contain;
+
+}
+
+.We-offer li {
+  margin-right: 10px;
+}
+
+.boxes-icon {
+  font-size: 40px;
+  margin: 20px;
+  color: #09af65;
+
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/*=========== How to Order Medicine ===========*/
+
+.how-order {
   margin: 60px 20px;
   background-color: #f4f6fa;
   box-shadow: 0 0 23px -17px #000000;
   border: 12px solid #fff;
 }
 
-.about-section .container {
+.how-order .container {
   padding: 10px;
 }
 
 .about-text {
   padding: 40px;
   height: 100%;
- 
+
 }
 
 .about-text .about-box h5 {
@@ -312,28 +337,81 @@ p {
   border-radius: 10px;
 }
 
-/*=========== CUstomer Feedback ===========*/
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
+/*=========== CUstomer Feedback ===========*/
 .Feedback-Section {
   padding: 80px 20px;
   background-color: #effdfd;
   background-image: url(./Images/light-bg.png);
 }
 
-/*=============   =============*/
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
+/*============= COVID-19  =============*/
+
+.covid-19 {
+  background-image: url(./Images/bg-01.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 100px 30px;
+  color: white;
+}
+
+.left-content {
+  background-color: rgba(104, 89, 182, 0.432);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.left-content .count-people h1 {
+  color: #00ff99;
+
+}
+
+.left-content li {
+  padding: 8px;
+}
+
+.right-float {
+  float: right;
+  font-weight: bold;
+}
+
+/* Left Virus img rorate ============= */
+
+.virus-round {
+  animation: rotate 20s linear infinite;
+}
+
+.virus-round img {
+  width: 400px;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(180deg) scale(1.2);
+  }
+
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /*============= Footer =============*/
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .footer-section {
   background-image: url(./Images/footer-bg.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 64px 100px;
+  padding: 40px 60px;
 }
 
 .footer-section .logo {
@@ -402,3 +480,4 @@ p {
   border-radius: 50%;
 }
 
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */

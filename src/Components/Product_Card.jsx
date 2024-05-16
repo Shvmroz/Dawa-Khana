@@ -2,7 +2,7 @@ import React from 'react'
 import ShoppingCartTwoToneIcon from '@mui/icons-material/ShoppingCartTwoTone';
 import star from '../Images/ss.png'
 
-export const Products = (props) => {
+export const ProductCard = (props) => {
     return (
         <div className='Products'>
             <div className='card'>

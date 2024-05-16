@@ -5,7 +5,7 @@ import AboutImage from '../Images/about-img.jpg'
 export const AboutSection = () => {
     return (
         <div>
-            <div className="about-section">
+            <div className="how-order">
                 <div className="row">
 
                     <div className="col=sm-12 col-md-12 col-lg-6">

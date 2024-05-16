@@ -1,9 +1,9 @@
 import React from 'react'
 
-export const Catagories = () => {
+export const WeOffer = () => {
     return (
 
-        <section className="section-two">
+        <section className="We-offer">
             <div className="container">
                 <div className="row">
                     <div className=" col-sm-6 col-md-3 col-lg-3 ">

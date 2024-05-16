@@ -1,25 +1,21 @@
 import React from 'react'
-import { NavBar } from '../Components/NavBar'
 import { Banner } from '../Components/Banner'
-import { Footer } from '../Components/Footer'
-import { AboutSection } from '../Components/AboutSection'
-import { MySlider } from '../Components/Slider'
-import { Catagories } from '../Components/SectionTwo'
-import { StripeForm } from '../Components/StripeForm'
-import { FeedbackSection } from '../Components/FeedbackCustomer'
+import { AboutSection } from '../Components/How_Order'
+import { ProductSlider } from '../Components/Product_Slider'
+import { WeOffer } from '../Components/We_Offer'
+import { Covid19 } from '../Components/Covid19'
+
 
 
 export const LandingPage = () => {
   return (
     <div>
-      <NavBar />
+  
       <Banner />
-      <Catagories />
-      <MySlider />
+      <Covid19/>
+      <ProductSlider/>
+      <WeOffer />
       <AboutSection />
-      <StripeForm />
-      <FeedbackSection/>
-      <Footer />
 
     </div>
   )

@@ -3,6 +3,7 @@ import Logo from '../Images/LogoPlus.png'
 import TextField from '@mui/material/TextField';
 import IconButton from '@mui/material/IconButton';
 import SendIcon from '@mui/icons-material/Send';
+import { Link } from 'react-router-dom';
 
 export const Footer = () => {
     return (
@@ -13,17 +14,19 @@ export const Footer = () => {
                     <div class="col-lg-4">
                         {/* ================ Logo */}
                         <div className="logo d-flex justify-content-between align-items-center">
-                            <h4 variant="h5" className='p-0 m-0' style={{ fontWeight: 'bold' }}>
-                                <span className='blue-clr'>Dawa</span>
-                                <img className='img-fluid' alt="Logo" src={Logo} />
-                                <span className='green-clr'>Khana</span>
-                            </h4>
+                            <Link to='/'>
+                                <h4 variant="h5" className='p-0 m-0' style={{ fontWeight: 'bold' }}>
+                                    <span className='blue-clr'>Dawa</span>
+                                    <img className='img-fluid' alt="Logo" src={Logo} />
+                                    <span className='green-clr'>Khana</span>
+                                </h4>
+                            </Link>
                         </div>
 
                         <div class="paragraph">
                             <p>Copyright © 2024 Dawa Khana ltd.</p>
                             <p>All rights reserved</p>
-                            <p>+92-302-6520002</p>
+                            <p>+92-306-6520002</p>
                             <p>info@dawakhana.com</p>
                         </div>
 
@@ -150,7 +153,7 @@ export const Footer = () => {
                     </div>
                 </div>
             </div>
-         
+
         </div>
     )
 }

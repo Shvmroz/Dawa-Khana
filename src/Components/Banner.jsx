@@ -22,7 +22,7 @@ export const Banner = () => {
                                 <div className="col-md-6 col-lg-7">
                                     <div className="container ">
                                         <div className='left-text'>
-                                            <h4 className=''>We are here for you</h4>
+                                            <h1 className='o-clr'>We are here for you</h1>
                                             <hr />
                                             <h2 className="green-clr mb-3 w-75 ">
                                                 What Makes Us Better,
@@ -46,7 +46,7 @@ export const Banner = () => {
                                 <div className="col-md-6 col-lg-7">
                                     <div className="container ">
                                         <div className='left-text'>
-                                            <h4 className=''>We are here for you</h4>
+                                            <h1 className='g-clr'>We are here for you</h1>
                                             <hr />
                                             <h2 className="green-clr mb-3 w-75 ">
                                                 What Makes Us Better,
@@ -70,7 +70,7 @@ export const Banner = () => {
                                 <div className="col-md-6 col-lg-7">
                                     <div className="container ">
                                         <div className='left-text'>
-                                            <h4 className=''>We are here for you</h4>
+                                            <h1 className='r-clr'>We are here for you</h1>
                                             <hr />
                                             <h2 className="green-clr mb-3 w-75 ">
                                                 What Makes Us Better,
