@@ -12,10 +12,10 @@ export const LandingPage = () => {
     <div>
   
       <Banner />
-      <Covid19/>
       <ProductSlider/>
-      <WeOffer />
+      <Covid19/>
       <AboutSection />
+      <WeOffer />
 
     </div>
   )
