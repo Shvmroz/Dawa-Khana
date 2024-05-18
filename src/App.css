@@ -339,14 +339,6 @@ p {
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-/*=========== CUstomer Feedback ===========*/
-.Feedback-Section {
-  padding: 80px 20px;
-  background-color: #effdfd;
-  background-image: url(./Images/light-bg.png);
-}
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /*============= COVID-19  =============*/
 
@@ -378,10 +370,12 @@ p {
   font-weight: bold;
 }
 
+
+
 /* Left Virus img rorate ============= */
 
 .virus-round {
-  animation: rotate 20s linear infinite;
+  animation: rotate 30s linear infinite;
 }
 
 .virus-round img {
@@ -402,6 +396,16 @@ p {
   }
 }
 
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/*============= Shop =============*/
+.shop{
+  padding: 50px;
+}
+.view-more h5:hover{
+cursor: pointer;
+color: #09af65;
+}
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /*============= Footer =============*/

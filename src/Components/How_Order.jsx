@@ -19,14 +19,14 @@ export const AboutSection = () => {
                                     Dawa Khana? It's Simple. .
                                 </h2>
                                 <ul>
-                                    <li><i class="fa-solid fa-1" style={{color: '#4BD7B8', marginRight:'15px'}}></i>Upload valid Prescription</li>
-                                    <li> <i class="fa-solid fa-2" style={{color: '#E18CC8',marginRight:'15px'}}></i>Receive a confirmation call</li>
-                                    <li><i class="fa-solid fa-3" style={{color: '#FF500C',marginRight:'15px'}}></i>Delivery at your door step</li>
+                                    <li><i className="fa-solid fa-1" style={{color: '#4BD7B8', marginRight:'15px'}}></i>Upload valid Prescription</li>
+                                    <li> <i className="fa-solid fa-2" style={{color: '#E18CC8',marginRight:'15px'}}></i>Receive a confirmation call</li>
+                                    <li><i className="fa-solid fa-3" style={{color: '#FF500C',marginRight:'15px'}}></i>Delivery at your door step</li>
                                 </ul>
                             </div>
                             <div className='p-3'>
                                 <h2 className='blue-clr w-75 mb-3'>Don't have a Prescription? Don't worry!</h2>
-                                <span className='mb-3'><i class="fa-solid fa-qrcode"  style={{color: '#9014FE',marginRight:'15px'}}></i> Simply search & add the medicines OR get a consultation from
+                                <span className='mb-3'><i className="fa-solid fa-qrcode"  style={{color: '#9014FE',marginRight:'15px'}}></i> Simply search & add the medicines OR get a consultation from
                                     a Dawa khana doctor</span>
                                 <span className='read-more'> Read more</span>
                             </div>

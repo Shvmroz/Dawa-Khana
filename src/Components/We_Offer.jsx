@@ -10,7 +10,7 @@ export const WeOffer = () => {
                         <ul className="boxes d-flex justify-content-center text-center p-3">
                             <li>
                                 <div className='boxes-icon'>
-                                    <i class="fa-solid fa-truck-fast"></i>
+                                    <i className="fa-solid fa-truck-fast"></i>
                                 </div>
                                 <div className='boxes-text'>
                                     <h6> Free Delivery</h6>
@@ -23,7 +23,7 @@ export const WeOffer = () => {
                         <ul className="boxes d-flex justify-content-center text-center p-3">
                             <li>
                                 <div className='boxes-icon'>
-                                    <i class="fa-solid fa-credit-card"></i>
+                                    <i className="fa-solid fa-credit-card"></i>
                                 </div>
                                 <div className='boxes-text'>
                                     <h6>Safe Payment</h6>
@@ -36,7 +36,7 @@ export const WeOffer = () => {
                         <ul className="boxes d-flex justify-content-center text-center p-3">
                             <li >
                                 <div className='boxes-icon'>
-                                    <i class="fa-solid fa-hand-holding-dollar"></i>
+                                    <i className="fa-solid fa-hand-holding-dollar"></i>
                                 </div>
                                 <div className='boxes-text'>
                                     <h6>Shop With Confidence</h6>
@@ -50,7 +50,7 @@ export const WeOffer = () => {
 
                             <li>
                                 <div className='boxes-icon'>
-                                    <i class="fa-solid fa-handshake-angle"></i>
+                                    <i className="fa-solid fa-handshake-angle"></i>
                                 </div>
                                 <div className='boxes-text'>
                                     <h6>24/7 Help Center</h6>

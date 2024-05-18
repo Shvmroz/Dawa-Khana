@@ -8,16 +8,16 @@ export const Banner = () => {
     return (
         <>
             <div className='banner-section'>
-                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active " aria-current="true" aria-label="Slide 1"></button>
+                <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
+                    <div className="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active " aria-current="true" aria-label="Slide 1"></button>
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
 
                     </div>
 
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
+                    <div className="carousel-inner">
+                        <div className="carousel-item active">
                             <div className="row justify-content-center align-items-center ">
                                 <div className="col-md-6 col-lg-7">
                                     <div className="container ">
@@ -41,7 +41,7 @@ export const Banner = () => {
                             </div>
                         </div>
                         {/* =============================  */}
-                        <div class="carousel-item">
+                        <div className="carousel-item">
                             <div className="row justify-content-center align-items-center ">
                                 <div className="col-md-6 col-lg-7">
                                     <div className="container ">
@@ -65,7 +65,7 @@ export const Banner = () => {
                             </div>
                         </div>
                         {/* ============================================ */}
-                        <div class="carousel-item">
+                        <div className="carousel-item">
                             <div className="row justify-content-center align-items-center ">
                                 <div className="col-md-6 col-lg-7">
                                     <div className="container ">

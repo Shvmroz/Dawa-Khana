@@ -1,47 +1,47 @@
-import React from 'react'
+import React from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import { ProductCard, } from './Product_Card';
+import { ProductCard } from './Product_Card';
 import { Data } from './Data';
 
-
-
 export const ProductSlider = () => {
-    const responsive = {
-        superLargeDesktop: {
-            // the naming can be any, depends on you.
-            breakpoint: { max: 4000, min: 1024 },
-            items: 6
-        },
-        desktop: {
-            breakpoint: { max: 1024, min: 850 },
-            items: 3
-        },
-        tablet: {
-            breakpoint: { max: 850, min: 600 },
-            items: 2
-        },
-        mobile: {
-            breakpoint: { max: 600, min: 0 },
-            items: 1
-        }
-    };
+  const responsive = {
+    superLargeDesktop: {
+      breakpoint: { max: 4000, min: 1024 },
+      items: 6
+    },
+    desktop: {
+      breakpoint: { max: 1024, min: 850 },
+      items: 3
+    },
+    tablet: {
+      breakpoint: { max: 850, min: 600 },
+      items: 2
+    },
+    mobile: {
+      breakpoint: { max: 600, min: 0 },
+      items: 1
+    }
+  };
 
+  const products = Data.map((item) => (
+    <ProductCard
+      key={item.id} // Assuming each item has a unique id
+      name={item.name}
+      url={item.imageurl}
+      price={item.price}
+      description={item.description}
+    />
+  ));
 
-    const product = Data.map(
-        (item) => <ProductCard
-            name={item.name} url={item.imageurl} price={item.price} description={item.description}
-        />
-    )
-    return (
-        <div>
-            <div className='product-heading '>
-                <h1>Products</h1>
-            </div>
-            <Carousel responsive={responsive}>
-                {product}
-            </Carousel>
-        </div>
-    )
-}
-
+  return (
+    <div>
+      <div className='product-heading green-clr'>
+        <h1>Popular Products</h1>
+      </div>
+      <Carousel responsive={responsive}>
+        {products}
+      </Carousel>
+    </div>
+  );
+};

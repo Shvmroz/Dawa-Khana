@@ -7,15 +7,15 @@ export const Covid19 = () => {
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-sm-12 col-md-6 col-lg-4">
-                        <div class="content-part">
-                            <div class="left-content">
+                        <div className="content-part">
+                            <div className="left-content">
                                 <h1>COVID-19 Tracker</h1>
                                 <h4>Total Confirmed Corona Cases</h4>
-                                <div class="count-people"><h1>960708</h1></div>
+                                <div className="count-people"><h1>960708</h1></div>
                                 <ul>
-                                    <li>Active cases <span class='right-float o-clr'>799571</span></li>
-                                    <li>Recovered cases <span class='right-float g-clr'>302826</span></li>
-                                    <li>Deaths <span class='right-float r-clr'>52558</span></li>
+                                    <li>Active cases <span className='right-float o-clr'>799571</span></li>
+                                    <li>Recovered cases <span className='right-float g-clr'>302826</span></li>
+                                    <li>Deaths <span className='right-float r-clr'>52558</span></li>
                                 </ul>
                             </div>
                         </div>

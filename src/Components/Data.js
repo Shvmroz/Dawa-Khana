@@ -113,5 +113,104 @@ export const Data = [
         price: "$37",
         description: "Sed do eiusmod tempor incididunt."
     },
+    {
+        id: 15,
+        imageurl: image1,
+        name: "Product 15",
+        price: "$7",
+        description: "Lorem ipsum dolor sit amet."
+    },
+    {
+        id: 16,
+        imageurl: image2,
+        name: "Product 16",
+        price: "$4",
+        description: "Sed do eiusmod tempor incididunt."
+    },
+    {
+        id: 17,
+        imageurl: image3,
+        name: "Product 17",
+        price: "$3",
+        description: "Lorem ipsum dolor sit amet."
+    },
+    {
+        id: 18,
+        imageurl: image4,
+        name: "Product 18",
+        price: "$5",
+        description: "Sed do eiusmod tempor incididunt."
+    },
+    {
+        id: 19,
+        imageurl: image5,
+        name: "Product 19",
+        price: "$20",
+        description: "Lorem ipsum dolor sit amet."
+    },
+    {
+        id: 20,
+        imageurl: image6,
+        name: "Product 20",
+        price: "$16",
+        description: "Sed do eiusmod tempor incididunt."
+    },
+    {
+        id: 21,
+        imageurl: image7,
+        name: "Product 21",
+        price: "$11",
+        description: "Lorem ipsum dolor sit amet."
+    },
+    {
+        id: 22,
+        imageurl: image8,
+        name: "Product 22",
+        price: "$12",
+        description: "Sed do eiusmod tempor incididunt."
+    },
+    {
+        id: 23,
+        imageurl: image9,
+        name: "Product 23",
+        price: "$15",
+        description: "Lorem ipsum dolor sit amet."
+    },
+    {
+        id: 24,
+        imageurl: image10,
+        name: "Product 24",
+        price: "$80",
+        description: "Sed do eiusmod tempor incididunt."
+    },
+    {
+        id: 25,
+        imageurl: image11,
+        name: "Product 25",
+        price: "$70",
+        description: "Sed do eiusmod tempor incididunt."
+    },
+    {
+        id: 26,
+        imageurl: image12,
+        name: "Product 26",
+        price: "$40",
+        description: "Sed do eiusmod tempor incididunt."
+    },
+    {
+        id: 27,
+        imageurl: image13,
+        name: "Product 27",
+        price: "$34",
+        description: "Sed do eiusmod tempor incididunt."
+    },
+    {
+        id: 28,
+        imageurl: image14,
+        name: "Product 28",
+        price: "$37",
+        description: "Sed do eiusmod tempor incididunt."
+    },
+    
 
 ]
