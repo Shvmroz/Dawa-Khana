@@ -1,10 +1,18 @@
 import React from 'react'
+import Mask from '../Images/maskimg.png'
 import banner1 from '../Images/banner1.png'
-import banner2 from '../Images/banner2.png'
 import banner3 from '../Images/banner3.png'
+import { Button } from '@mui/material'
+import { useNavigate } from 'react-router-dom'
+
 
 
 export const Banner = () => {
+    const navigate = useNavigate();
+
+    const handleNavigateShop = () => {
+      navigate('/shop');
+    };
     return (
         <>
             <div className='banner-section'>
@@ -20,22 +28,23 @@ export const Banner = () => {
                         <div className="carousel-item active">
                             <div className="row justify-content-center align-items-center ">
                                 <div className="col-md-6 col-lg-7">
-                                    <div className="container ">
+                                    <div className="container">
                                         <div className='left-text'>
-                                            <h1 className='o-clr'>We are here for you</h1>
+                                            <h1 className='o-clr'>Disposable  <span className='blue-clr'>Face Mask</span></h1>
                                             <hr />
-                                            <h2 className="green-clr mb-3 w-75 ">
-                                                What Makes Us Better,
-                                                <span className='blue-clr'> Makes You Better.</span>
+                                            <h2 className="r-clr mb-3 ">
+                                                upto 50% off
                                             </h2>
-                                            <p className="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            <p className="mb-3">
+                                                Single-use masks that cover the mouth and nose and provide varying levels of filtration.
                                             </p>
+                                            <Button variant="outlined" onClick={handleNavigateShop}  >More Products</Button>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-md-6 col-lg-5 d-none d-md-block">
                                     <div className="container right-image">
-                                        <img className="img-fluid" src={banner1} alt="" />
+                                        <img className="img-fluid" src={Mask} alt="" />
                                     </div>
                                 </div>
                             </div>
@@ -46,20 +55,20 @@ export const Banner = () => {
                                 <div className="col-md-6 col-lg-7">
                                     <div className="container ">
                                         <div className='left-text'>
-                                            <h1 className='g-clr'>We are here for you</h1>
+                                            <h1 className='blue-clr'>We are here for you</h1>
                                             <hr />
-                                            <h2 className="green-clr mb-3 w-75 ">
-                                                What Makes Us Better,
-                                                <span className='blue-clr'> Makes You Better.</span>
+                                            <h2 className="r-clr mb-3 ">
+                                                upto 40% off
                                             </h2>
                                             <p className="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                             </p>
+                                            <Button variant="outlined" onClick={handleNavigateShop}  >More Products</Button>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-md-6 col-lg-5 d-none d-md-block">
                                     <div className="container right-image">
-                                        <img className="img-fluid" src={banner2} alt="" />
+                                        <img className="img-fluid" src={banner1} alt="" />
                                     </div>
                                 </div>
                             </div>
@@ -70,14 +79,14 @@ export const Banner = () => {
                                 <div className="col-md-6 col-lg-7">
                                     <div className="container ">
                                         <div className='left-text'>
-                                            <h1 className='r-clr'>We are here for you</h1>
+                                            <h1 className='green-clr'>We are here for you</h1>
                                             <hr />
-                                            <h2 className="green-clr mb-3 w-75 ">
-                                                What Makes Us Better,
-                                                <span className='blue-clr'> Makes You Better.</span>
+                                            <h2 className="r-clr mb-3 ">
+                                                upto 30% off
                                             </h2>
                                             <p className="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                             </p>
+                                            <Button variant="outlined" onClick={handleNavigateShop}  >More Products</Button>
                                         </div>
                                     </div>
                                 </div>
@@ -89,12 +98,10 @@ export const Banner = () => {
                             </div>
                         </div>
                     </div>
-
-
                 </div>
             </div>
-           </>
-         
+        </>
+
 
 
     )

@@ -43,7 +43,7 @@ p {
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
- 
+
 
 }
 
@@ -53,6 +53,7 @@ a {
 
 .blue-btn {
   background-color: #18A9DD !important;
+  color: white;
   border-radius: 8px !important;
   text-transform: none !important;
   padding: 10px 20px !important;
@@ -60,6 +61,7 @@ a {
 
 .green-btn {
   background-color: #09af65 !important;
+  color: white;
   border-radius: 8px !important;
   text-transform: none !important;
   padding: 10px 20px !important;
@@ -68,9 +70,11 @@ a {
 .blue-clr {
   color: #18A9DD;
 }
+
 .green-clr {
   color: #09af65;
 }
+
 /* other color */
 .o-clr {
   color: orange;
@@ -81,10 +85,14 @@ a {
 }
 
 .r-clr {
-  color: #FF5F5E;
+  color: #FF4F5A;
 }
+
 /* --------------------------------------------------------------------------------- */
 /*==== Nav Bar =====================================================================*/
+.logo {
+  padding: 10px;
+}
 
 .logo img {
   width: 40px;
@@ -149,6 +157,10 @@ a {
 }
 
 /* carsol indicator button */
+.carousel-indicators {
+  bottom: -40px;
+}
+
 .carousel-indicators [data-bs-target] {
   background-color: #a3bcb0;
 }
@@ -176,7 +188,7 @@ a {
 }
 
 .Products .card .card-body {
-  background-color: #f2fff5;
+  background-color: #ffffff;
   border-radius: 10px;
   margin-bottom: 10px;
   margin-top: 10px;
@@ -194,7 +206,7 @@ a {
   padding: 15px;
   text-align: center;
   border-radius: 10px;
-  background-color: #ebf6f8;
+  background-color: #ffffff;
 }
 
 /* Hover Effect ---------------------------*/
@@ -214,7 +226,7 @@ a {
 
 .Products .card:hover .card-body {
   /* Change body color on hover */
-  background-color: #d8f3dc;
+  background-color: #ebf6f8;
 }
 
 .Products .card:hover img {
@@ -226,13 +238,13 @@ a {
   padding: 15px;
   text-align: center;
   border-radius: 10px;
-  background-color: #ebf6f8;
+  background-color: #f3fff5;
   /* Add transition for smooth effect */
   transition: background-color 0.3s;
 }
 
 .cart:hover {
-  background-color: #b4e7fa;
+  background-color: #c7eccd;
   cursor: pointer;
 }
 
@@ -252,7 +264,7 @@ a {
 }
 
 .about-text {
-  padding: 40px;
+  padding: 20px;
   height: 100%;
 
 }
@@ -350,11 +362,17 @@ p {
 /* Left Virus img rorate ---------------- */
 
 .virus-round {
+  width: 300px;
+  height: 300px;
   animation: rotate 30s linear infinite;
+  display: flex;
+  margin: auto;
+  overflow: hidden;
 }
 
 .virus-round img {
-  width: 400px;
+  width: 100%;
+  height: 100%;
 }
 
 @keyframes rotate {
@@ -362,24 +380,21 @@ p {
     transform: rotate(0deg);
   }
 
-  50% {
-    transform: rotate(180deg) scale(1.2);
-  }
-
   100% {
-    transform: rotate(360deg) scale(1);
+    transform: rotate(360deg);
   }
 }
 
 
 /* --------------------------------------------------------------------------------- */
 /*==== Shop ========================================================================*/
-.shop{
+.shop {
   padding: 50px;
 }
-.view-more h5:hover{
-cursor: pointer;
-color: #09af65;
+
+.view-more h5:hover {
+  cursor: pointer;
+  color: #09af65;
 }
 
 /* --------------------------------------------------------------------------------- */
@@ -403,6 +418,37 @@ color: #09af65;
 
 }
 
+/* --------------------------------------------------------------------------------- */
+/*==== About us ======================================================================*/
+
+.about-us {
+ 
+  padding: 30px;
+  background-image: url(./Images/pngwing.com\ \(1\).png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh; /* Use min-height instead of height */
+  
+
+}
+
+/* --------------------------------------------------------------------------------- */
+/*==== Support ======================================================================*/
+.support{
+  padding: 30px;
+  background-image: url(./Images/pngwing.com.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.support .right-support{
+  background: radial-gradient(circle, #FFD392 0%, #62b1915f 100%);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+
 
 /* --------------------------------------------------------------------------------- */
 /*==== Footer ======================================================================*/
@@ -413,21 +459,18 @@ color: #09af65;
   background-position: center;
   background-repeat: no-repeat;
   padding: 40px 60px;
+  color: white;
 }
 
 .footer-section .logo {
-  margin-bottom: 20px;
-}
-
-.footer-section p {
-  color: #ffffff !important;
+  margin-bottom: 15px;
 
 }
 
 
 @media only screen and (max-width: 768px) {
   .footer-section {
-    padding: 64px;
+    padding: 20px;
   }
 }
 
@@ -440,10 +483,7 @@ color: #09af65;
 
 .footer-section .footer-menu {
   justify-content: space-between;
-  color: #ffffff !important;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
+
 }
 
 .stay-uptodate {
@@ -452,12 +492,16 @@ color: #09af65;
 
 /*--------------------- menu */
 
-.footer-section .footer-menu ul li {
-  padding-bottom: 12px;
+.footer-section ul li {
+  padding-bottom: 10px;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 400;
+  line-height: 20px;
 }
 
-.footer-section .footer-menu li:hover {
-  color: #09af65;
+.footer-section .footer-menu ul li:hover {
+  color: #1ad27f;
   cursor: pointer;
 }
 
@@ -480,4 +524,5 @@ color: #09af65;
   cursor: pointer;
   border-radius: 50%;
 }
+
 /* --------------------------------------------------------------------------------- */

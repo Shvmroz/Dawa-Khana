@@ -6,7 +6,7 @@ export const Covid19 = () => {
         <div className='covid-19'>
             <div className="container">
                 <div className="row align-items-center">
-                    <div className="col-sm-12 col-md-6 col-lg-4">
+                    <div className="col-sm-12 col-md-5 col-lg-4">
                         <div className="content-part">
                             <div className="left-content">
                                 <h1>COVID-19 Tracker</h1>
@@ -20,8 +20,8 @@ export const Covid19 = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-sm-12 col-md-6 col-lg-8">
-                        <div className="virus-round d-flex justify-content-center ">
+                    <div className="col-sm-12 col-md-7 col-lg-8">
+                        <div className="virus-round ">
                             <img className='img-fluid' src={virus} alt="" />
                         </div>
 

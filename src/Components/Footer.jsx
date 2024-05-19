@@ -13,21 +13,24 @@ export const Footer = () => {
                 <div className="row">
                     <div className="col-lg-4">
                         {/* ================ Logo */}
-                        <div className="logo d-flex justify-content-between align-items-center">
+                        <div className="logo d-flex justify-content-between align-items-center pt-0 px-0">
                             <Link to='/'>
                                 <h4 variant="h5" className='p-0 m-0' style={{ fontWeight: 'bold' }}>
-                                    <span className='blue-clr'>Dawa</span>
+                                    <span className='blue-clr'>DAWA</span>
                                     <img className='img-fluid' alt="Logo" src={Logo} />
-                                    <span className='green-clr'>Khana</span>
+                                    <span className='green-clr'>KHANA</span>
                                 </h4>
                             </Link>
                         </div>
 
-                        <div className="paragraph">
-                            <p>Copyright © 2024 Dawa Khana ltd.</p>
-                            <p>All rights reserved</p>
-                            <p>+92-306-6520002</p>
-                            <p>info@dawakhana.com</p>
+                        <div className="paragraph text-white ">
+                            <ul>
+                                <li>+92-306-6520002</li>
+                                <li>info@dawakhana.com</li>
+                                <li>Sahiwal, Punjab, Pakistan</li>
+                                <li>Copyright © 2024 Dawa Khana ltd.</li>
+                                <li>All rights reserved</li>
+                            </ul>
                         </div>
 
                     </div>
@@ -36,7 +39,7 @@ export const Footer = () => {
                         <div className="row">
                             <div className="footer-menu d-flex">
                                 <div className="col-lg-5">
-                                    <h4 className='blue-clr'>Company</h4>
+                                    <h4>Company</h4>
                                     <div className="Company">
                                         <ul>
                                             <li>About us</li>
@@ -49,7 +52,7 @@ export const Footer = () => {
                                 </div>
                                 {/* <!--  --> */}
                                 <div className="col-lg-5">
-                                    <h4 className='blue-clr'>Support</h4>
+                                    <h4>Support</h4>
                                     <div className="Support">
                                         <ul>
                                             <li>Help Center</li>

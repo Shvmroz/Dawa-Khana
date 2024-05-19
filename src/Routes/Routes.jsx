@@ -5,6 +5,7 @@ import { LandingPage } from '../Pages/LandingPage';
 import { MyLayout } from '../Layouts/MyLayout';
 import { Shop } from '../Pages/Shop';
 import { CustomerSupport } from '../Pages/CustomerSupport';
+import FaQ from '../Pages/FaQ';
 
 
 export const RoutesFile = () => {
@@ -27,6 +28,7 @@ export const RoutesFile = () => {
                     <Route path='/about' element={<About/>} />
                     <Route path='/shop' element={<Shop/>} />
                     <Route path='/support' element={<CustomerSupport/>} />
+                    <Route path='/faq' element={<FaQ/>}/>
                 </Route>
             </Routes>
         </div>

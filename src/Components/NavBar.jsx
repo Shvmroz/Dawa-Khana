@@ -16,9 +16,9 @@ export const NavBar = () => {
                     <div className="logo d-flex justify-content-between align-items-center">
                         <Link to='/'>
                             <h4 variant="h5" className='p-0 m-0' style={{ fontWeight: 'bold' }}>
-                                <span className='blue-clr'>Dawa</span>
+                                <span className='blue-clr'>DAWA</span>
                                 <img className='img-fluid' alt="Logo" src={Logo} />
-                                <span className='green-clr'>Khana</span>
+                                <span className='green-clr'>KHANA</span>
                             </h4>
                         </Link>
                     </div>
@@ -44,6 +44,9 @@ export const NavBar = () => {
                             </li>
                             <li className="nav-item ">
                                 <Link className="nav-link " to='/support'>Support</Link>
+                            </li>
+                            <li className="nav-item ">
+                                <Link className="nav-link " to='/faq'>FaQ</Link>
                             </li>
                         </ul>
                         {/* =================== BUTTONS ===================== */}

@@ -13,7 +13,7 @@ export const AboutSection = () => {
                     </div>
                     <div className="col-sm-12 col-md-12 col-lg-6">
                         <div className="about-text align-content-center">
-                            <div className='how-to-order mb-3 p-3'>
+                            <div className='how-to-order mb-3 '>
                                 <h2 className='w-75 mb-3 green-clr'>
                                     How to order medicines on
                                     Dawa Khana? It's Simple. .
@@ -24,7 +24,7 @@ export const AboutSection = () => {
                                     <li><i className="fa-solid fa-3" style={{color: '#FF500C',marginRight:'15px'}}></i>Delivery at your door step</li>
                                 </ul>
                             </div>
-                            <div className='p-3'>
+                            <div className=''>
                                 <h2 className='blue-clr w-75 mb-3'>Don't have a Prescription? Don't worry!</h2>
                                 <span className='mb-3'><i className="fa-solid fa-qrcode"  style={{color: '#9014FE',marginRight:'15px'}}></i> Simply search & add the medicines OR get a consultation from
                                     a Dawa khana doctor</span>
