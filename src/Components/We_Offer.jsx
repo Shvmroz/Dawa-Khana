@@ -6,7 +6,7 @@ export const WeOffer = () => {
         <section className="We-offer">
             <div className="container">
                 <div className="row">
-                    <div className=" col-sm-6 col-md-3 col-lg-3 ">
+                    <div className=" col-6 col-sm-6 col-md-3 col-lg-3 ">
                         <ul className="boxes d-flex justify-content-center text-center p-3">
                             <li>
                                 <div className='boxes-icon'>
@@ -19,7 +19,7 @@ export const WeOffer = () => {
                             </li >
                         </ul>
                     </div>
-                    <div className=" col-sm-6 col-md-3 col-lg-3  ">
+                    <div className="col-6 col-sm-6 col-md-3 col-lg-3  ">
                         <ul className="boxes d-flex justify-content-center text-center p-3">
                             <li>
                                 <div className='boxes-icon'>
@@ -32,7 +32,7 @@ export const WeOffer = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className=" col-sm-6 col-md-3 col-lg-3 ">
+                    <div className="col-6 col-sm-6 col-md-3 col-lg-3 ">
                         <ul className="boxes d-flex justify-content-center text-center p-3">
                             <li >
                                 <div className='boxes-icon'>
@@ -45,7 +45,7 @@ export const WeOffer = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className=" col-sm-6 col-md-3 col-lg-3 ">
+                    <div className="col-6 col-sm-6 col-md-3 col-lg-3 ">
                         <ul className="boxes d-flex justify-content-center text-center p-3 ">
 
                             <li>

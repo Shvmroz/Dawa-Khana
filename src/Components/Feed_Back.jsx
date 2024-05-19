@@ -8,10 +8,10 @@ import user4 from '../Images/user4.png'
 export const FeedBack = () => {
     return (
         <div>
-            <div className='feed-back'>
+            <div className='feed-back mt-4'>
                 <h1 className='text-center mb-4 green-clr'>Feedbacks</h1>
                 <div className='row'>
-                    <div className="col-sm-6 col-md-6 col-lg-3">
+                    <div className="col-6 col-sm-6 col-md-6 col-lg-3">
                         <div className="card mb-3">
                             <div className='card-img mb-3'>
                                 <img src={user1} className="img-fluid" alt='User'/>
@@ -23,7 +23,7 @@ export const FeedBack = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-sm-6 col-md-6 col-lg-3">
+                    <div className="col-6 col-sm-6 col-md-6 col-lg-3">
                     <div className="card mb-3">
                             <div className='card-img mb-3'>
                                 <img src={user2} className="img-fluid" alt='User'/>
@@ -35,7 +35,7 @@ export const FeedBack = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-sm-6 col-md-6 col-lg-3">
+                    <div className="col-6 col-sm-6 col-md-6 col-lg-3">
                     <div className="card mb-3">
                             <div className='card-img mb-3'>
                                 <img src={user3} className="img-fluid" alt='User'/>
@@ -47,7 +47,7 @@ export const FeedBack = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-sm-6 col-md-6 col-lg-3">
+                    <div className="col-6 col-sm-6 col-md-6 col-lg-3">
                     <div className="card">
                             <div className='card-img mb-3'>
                                 <img src={user4} className="img-fluid" alt='User'/>
