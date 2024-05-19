@@ -1,7 +1,8 @@
 import React from 'react';
 import { ThemeProvider, createTheme, responsiveFontSizes } from '@mui/material/styles';
 import { Typography } from '@mui/material';
-import heart from '../Images/3227422.jpg'
+import faq from '../Images/faq.jpg'
+
 
 const FaQ = () => {
 
@@ -12,17 +13,18 @@ const FaQ = () => {
         <section className='faq'>
             <div className="container">
                 <div className="row justify-content-center">
-                    <div className="text-center mt-5 r-clr">
-                        <ThemeProvider theme={theme}>
-                            <Typography variant='h3' fontWeight="bold">
-                                Frequently Asked Questions
-                            </Typography>
-                        </ThemeProvider>
+
+                    <div className='col-lg-6'>
+                        <div className="text-center mt-5 blue-clr">
+                            <ThemeProvider theme={theme}>
+                                <Typography variant='h2' fontWeight="bold">
+                                    FaQ?
+                                </Typography>
+                            </ThemeProvider>
+                        </div>
+                        <img className='img-fluid  d-flex m-auto' src={faq} alt="heart" />
                     </div>
-                    <div>
-                        <img className='img-fluid w-75 d-flex m-auto' src={heart} alt="heart" />
-                    </div>
-                    <div className="col-sm-12 col-md-10">
+                    <div className="col-sm-12 col-lg-6">
                         <div className="accordion" id="accordionExample">
                             <div className="accordion-item mt-5">
                                 <h2 className="accordion-header" id="headingOne">
@@ -154,9 +156,9 @@ const FaQ = () => {
                                 </div>
                             </div>
 
-                         
                         </div>
                     </div>
+                   
                 </div>
             </div>
         </section>

@@ -2,7 +2,7 @@ import { Button, Divider, } from '@mui/material'
 import React from 'react'
 import Logo from '../Images/LogoPlus.png'
 import { ShoppingCart } from '@mui/icons-material'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 
 
@@ -31,22 +31,46 @@ export const NavBar = () => {
                     </button>
                     {/* =================== ITEMS LIST ===================== */}
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul className="navbar-nav  me-auto mx-auto mb-2 mb-lg-0">
-                            <li className="nav-item ">
-                                <Link className="nav-link" aria-current="page" to='/'>Home</Link>
-                            </li>
-                            <li className="nav-item ">
-                                <Link className="nav-link" to='/shop'>Shop</Link>
-                            </li>
-
+                        <ul className="navbar-nav me-auto mx-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <Link className="nav-link " to='/about'>About</Link>
+                                <NavLink
+                                    to='/'
+                                    className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}
+                                >
+                                    Home
+                                </NavLink>
                             </li>
-                            <li className="nav-item ">
-                                <Link className="nav-link " to='/support'>Support</Link>
+                            <li className="nav-item">
+                                <NavLink
+                                    to='/shop'
+                                    className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}
+                                >
+                                    Shop
+                                </NavLink>
                             </li>
-                            <li className="nav-item ">
-                                <Link className="nav-link " to='/faq'>FaQ</Link>
+                            <li className="nav-item">
+                                <NavLink
+                                    to='/about'
+                                    className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}
+                                >
+                                    About
+                                </NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink
+                                    to='/support'
+                                    className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}
+                                >
+                                    Support
+                                </NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink
+                                    to='/faq'
+                                    className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}
+                                >
+                                    FaQ
+                                </NavLink>
                             </li>
                         </ul>
                         {/* =================== BUTTONS ===================== */}

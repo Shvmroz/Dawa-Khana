@@ -36,6 +36,7 @@ li {
   list-style: none;
   padding: 0;
   margin: 0;
+
 }
 
 p {
@@ -49,6 +50,7 @@ p {
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 .blue-btn {
@@ -103,13 +105,10 @@ a {
   margin: 10px;
 }
 
-.navbar-nav .nav-item a:hover {
-  color: #09af65;
-  font-weight: 500;
-}
 
 .navbar-nav li {
   list-style-type: none;
+  font-weight: 400;
 }
 
 .navbar-nav li a {
@@ -117,7 +116,18 @@ a {
   position: relative;
 }
 
-.navbar-nav li a::after {
+/* Hover Effect -------------- */
+
+.navbar-nav .nav-link {
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #09af65;
+}
+
+.navbar-nav .nav-link::after {
   content: '';
   position: absolute;
   left: 50%;
@@ -125,11 +135,20 @@ a {
   height: 2px;
   width: 0;
   background-color: #18A9DD;
-  /* Change the color as needed */
   transition: width 0.3s ease, left 0.3s ease;
 }
 
-.navbar-nav li a:hover::after {
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.navbar-nav .nav-link.active {
+  font-weight: 500;
+  color: #09af65;
+}
+
+.navbar-nav .nav-link.active::after {
   width: 100%;
   left: 0;
 }
@@ -291,8 +310,8 @@ p {
 
 
 .box-one {
-  background-color: #E3E9F6;
-  color: #8392B3;
+  background-color: #d0defc;
+  color: #7081a7;
   padding: 14px;
   margin: 25px 0 0;
   text-align: center;
@@ -300,8 +319,8 @@ p {
 }
 
 .box-two {
-  background-color: #E4F1F0;
-  color: #86B3B0;
+  background-color: #c8ecdc;
+  color: #739d9a;
   padding: 14px;
   margin: 25px 0 0;
   text-align: center;
@@ -309,8 +328,8 @@ p {
 }
 
 .box-three {
-  background-color: #F5F1EB;
-  color: #C0B099;
+  background-color: #f1eada;
+  color: #a89882;
   padding: 14px;
   margin: 25px 0 0;
   text-align: center;
@@ -318,8 +337,8 @@ p {
 }
 
 .box-four {
-  background-color: #E2E4E8;
-  color: #909090;
+  background-color: #d7d8dc;
+  color: #817c7c;
   padding: 14px;
   margin: 25px 0 0;
   text-align: center;
@@ -419,22 +438,57 @@ p {
 }
 
 /* --------------------------------------------------------------------------------- */
+/*==== We offer ====================================================================*/
+
+.feed-back {
+  padding: 30px;
+
+}
+
+.feed-back .card {
+  padding: 20px;
+  border-radius: 30px;
+  background: radial-gradient(circle, rgb(179, 130, 130) 0%, rgba(116, 155, 183, 0.352) 100%);
+  box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+.feed-back .card .card-img img {
+  width: 50%;
+  padding: 10px;
+  background: linear-gradient(108deg, rgb(211, 0, 208) 0%, #00FD9A 67%, rgba(164, 69, 252, 1) 100%);
+  border-radius: 50%;
+  display: flex;
+  margin: auto;
+}
+.feed-back .card .card-body{
+  padding: 0px !important;
+  }
+
+.card-body .card-text {
+  background-color: #e1e8e9;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* --------------------------------------------------------------------------------- */
 /*==== About us ======================================================================*/
 
 .about-us {
- 
+
   padding: 30px;
   background-image: url(./Images/pngwing.com\ \(1\).png);
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 100vh; /* Use min-height instead of height */
-  
+  min-height: 100vh;
+  /* Use min-height instead of height */
+
 
 }
 
 /* --------------------------------------------------------------------------------- */
 /*==== Support ======================================================================*/
-.support{
+.support {
   padding: 30px;
   background-image: url(./Images/pngwing.com.png);
   background-size: cover;
@@ -442,7 +496,7 @@ p {
   min-height: 100vh;
 }
 
-.support .right-support{
+.support .right-support {
   background: radial-gradient(circle, #FFD392 0%, #62b1915f 100%);
   padding: 20px;
   border-radius: 15px;
@@ -466,6 +520,11 @@ p {
   margin-bottom: 15px;
 
 }
+
+.paragraph ul li a:hover {
+  color: #1ad27f !important;
+}
+
 
 
 @media only screen and (max-width: 768px) {
@@ -509,20 +568,6 @@ p {
   margin-top: 30px;
 }
 
-/*------------------------ icon */
-.footer-section .foter-icon ul {
-  display: flex;
 
-}
-
-.footer-section .foter-icon li {
-  margin: auto;
-}
-
-.footer-section .foter-icon li svg:hover {
-  background-color: #09af65;
-  cursor: pointer;
-  border-radius: 50%;
-}
 
 /* --------------------------------------------------------------------------------- */

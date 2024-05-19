@@ -55,12 +55,12 @@ export const Banner = () => {
                                 <div className="col-md-6 col-lg-7">
                                     <div className="container ">
                                         <div className='left-text'>
-                                            <h1 className='blue-clr'>We are here for you</h1>
+                                        <h1 className='o-clr'>Disposable  <span className='blue-clr'>Face Mask</span></h1>
                                             <hr />
                                             <h2 className="r-clr mb-3 ">
                                                 upto 40% off
                                             </h2>
-                                            <p className="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            <p className="mb-3">Single-use masks that cover the mouth and nose and provide varying levels of filtration
                                             </p>
                                             <Button variant="outlined" onClick={handleNavigateShop}  >More Products</Button>
                                         </div>
@@ -79,12 +79,12 @@ export const Banner = () => {
                                 <div className="col-md-6 col-lg-7">
                                     <div className="container ">
                                         <div className='left-text'>
-                                            <h1 className='green-clr'>We are here for you</h1>
+                                        <h1 className='o-clr'>Tablets For <span className='blue-clr'>Headache</span></h1>
                                             <hr />
                                             <h2 className="r-clr mb-3 ">
                                                 upto 30% off
                                             </h2>
-                                            <p className="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            <p className="mb-3">Single-use masks that cover the mouth and nose and provide varying levels of filtration
                                             </p>
                                             <Button variant="outlined" onClick={handleNavigateShop}  >More Products</Button>
                                         </div>
